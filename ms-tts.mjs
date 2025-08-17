@@ -20,11 +20,11 @@ import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
-// Load environment variables
-config();
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+// Load environment variables
+config({ path: resolve(__dirname, '.env') });
 
 // Configuration
 const AZURE_SPEECH_KEY = process.env.AZURE_SPEECH_KEY || process.env.AZURE_SPEECH_KEY_FREE;
