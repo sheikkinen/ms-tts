@@ -1,0 +1,33 @@
+# Environment variables
+.env
+
+# Node modules
+node_modules/
+
+# Audio output files
+audio/
+*.wav
+*.aac
+*.mkv
+
+# Generated files
+timings.js
+lame.sh
+mylist.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
